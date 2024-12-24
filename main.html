@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Info</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container">
+        <div class="user-info">
+            <img id="user-image" src="" alt="User Photo" class="user-image">
+            <h2 id="user-name"></h2>
+        </div>
+        
+        <div class="buttons">
+            <button data-attr="age" id="age-btn">Age</button>
+            <button data-attr="email" id="email-btn">Email</button>
+            <button data-attr="phone" id="phone-btn">Phone</button>
+        </div>
+        
+        <div class="additional-info">
+            <h3>Additional Info:</h3>
+            <p id="additional-info-text">Click a button to see additional info.</p>
+        </div>
+        
+        <button id="getUser">Get New User</button>
+    </div>
 
+    <script src="script.js"></script>
 </body>
-
 </html>
